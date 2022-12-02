@@ -9,8 +9,8 @@ max-width width width
 }
 
 img {
-     width: 150%;
-     max-height: max-content ;
+     max-width: 100%;
+     height: auto ;
     /* image responsive, largeur maxi */
     /* hauteur "auto" */
 }
@@ -21,7 +21,7 @@ img {
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    scroll-snap-align: start;
+  
     /* aligne horizontalement les enfants */
     /* largeur du parent */
 
@@ -29,13 +29,14 @@ img {
 
 .carrousel_ecran {
     width: 100%;
-    flex: 100%;
+    flex: none;
+    scroll-snap-align: start;
     /* largeur du parent pour chaque enfant */
     /* permet de garder toute la largeur du parent */
 }
 
 .carrousel_ecran figure {
-    margin: none;
+    margin: 0;
     /* enlève les marges par défaut */
 }
 
@@ -65,4 +66,23 @@ img {
 
 .carrousel_btn-apres {
     right: 0;
+}
+
+/* en vrac :
+0 0 1rem display center flex gap 
+justify-content list-style margin none padding
+*/
+.caroussel_liste-liens {
+    : ;
+    /* aligne horizontalement les enfants */
+    : ;
+    /* centre horizontalement les enfants */
+    : ;
+    /* enlève les marges par défaut */
+    : ;
+    /* enlève les padding par défaut */
+    : ;
+    /* enlève les puces par défaut */
+    : ;
+    /* espace entre les enfants */
 }
